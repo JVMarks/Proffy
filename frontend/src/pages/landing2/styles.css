@@ -1,0 +1,186 @@
+#page-landing2 {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--color-text-in-primary);
+}
+
+.background-page{
+  width: 140vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-primary);
+}
+
+.background-page .background_img{
+position: absolute;
+width: 45vw;
+height: 50vh;
+
+transform: rotate(90deg);
+} 
+
+.background-page .logo-container2 img {
+  height: 10rem;
+}
+
+.logo-container2 {
+  text-align: left;
+  margin-bottom: 3.2rem;
+}
+
+.logo-container2 h2 {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 4.6rem;
+  width: 25vw;
+}
+
+#page-landing2 article {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article .Loginform {
+  display: block;
+  justify-content: center;
+  align-items: center; 
+  padding-left: 10vw;
+
+  width: 100%;
+  max-width: 74rem;
+  border-radius: 0.8rem;
+  margin: -3.2rem auto 3.2rem;
+  padding-top: 6.4rem;
+  overflow: hidden;
+
+}
+
+.Loginform legend {
+  margin-bottom: 20px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 36px;
+
+  color: #32264D;
+}
+
+.Loginform .Input {
+  width: 37rem;
+  height: 8.4rem;
+  margin: 2px;
+  padding: 10px;
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  box-sizing: border-box;
+  border-radius: 8px 8px 8px 8px;
+  margin-bottom: 5px;
+}
+
+.Loginform .CheckboxInput {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+ 
+}
+
+ .Loginform .checkboxText {
+  margin: 5px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  
+  color: #9C98A6;
+}
+
+.Loginform .CheckboxInput .esqueci {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  padding-left: 5vw;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+
+  text-align: right;
+  
+  color: #9C98A6;
+  text-decoration: none;
+}
+
+
+ .Loginform .button-in {
+  width: 37rem;
+  height: 8.4rem;
+  border-radius: 0.8rem;
+  font: 700 2.0rem Archivo;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  color: var(--color-button-text);
+  background: var(--color-secundary);
+  transition: background-color 0.2s;
+}
+
+.Loginform  a.button-in:hover {
+  background: var(--color-secundary-dark);
+}
+
+.Loginform footer {
+  padding-top: 10vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.6rem;
+}
+
+.Loginform p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  
+  color: #6A6180;
+}
+
+.Loginform .footer-link{
+ 
+  
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.4rem;
+  line-height: 26px;
+
+  
+  color: #6A6180;
+}
+
+.Loginform span {
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 20px;
+color: #9C98A6;
+}
