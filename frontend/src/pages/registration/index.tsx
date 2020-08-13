@@ -1,17 +1,15 @@
 import React from 'react';
-
 import { Link } from 'react-router-dom';
-
 import logoimg from '../../assets/images/logo.svg';
 import backgroundImg from '../../assets/images/success-background.svg';
 import backIcon from '../../assets/images/icons/back.svg';
+
 import './styles.css';
 
 function registration() {
 
   return (
     <div id="page-registration">
-
       <header className="page-header2">
         <div className="top-bar-container2">
           <Link to="/">
@@ -21,9 +19,7 @@ function registration() {
       </header>
 
       <article>
-
-
-        <form action="" className="registrationForm">
+        <form className="registrationForm" >
           <legend>Cadastro</legend>
           <span>Preencha os dados abaixo para começar.</span>
           <input
@@ -54,7 +50,7 @@ function registration() {
             placeholder="Senha"
             className="Input"
           />
-          <Link to="/" className="button-in">
+          <Link to="/Accept" className="button-in" >
             Concluir cadastro
         </Link>
         </form>
@@ -69,7 +65,6 @@ function registration() {
           </div>
         </div>
       </div>
-
     </div>
   )
 }

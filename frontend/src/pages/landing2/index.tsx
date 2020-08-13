@@ -12,7 +12,7 @@ function landing2() {
 
     <div id="page-landing2">
       <div className="background-page">
-      <img src={backgroundImg} alt="blckground" className="background_img" />
+        <img src={backgroundImg} alt="blckground" className="background_img" />
         <div id="page-landing-content2" className="container2">
           <div className="logo-container2">
             <img src={logoimg} alt="Proffy" />
@@ -40,20 +40,22 @@ function landing2() {
             className="Input"
           />
           <div className="CheckboxInput">
-            <input
-              id="checkbox"
-              name="checkbox"
-              type="checkbox"
-              className="CheckboxInput"
-            />
-            <p className="checkboxText">Lembrar-me</p>
+
+            <label className="checkboxText">
+              <input
+                id="checkbox"
+                name="checkbox"
+                type="checkbox"
+              />
+              <span className="checkmark"></span>
+              Lembrar-me</label>
 
             <Link to="/forgotaccont" className="esqueci">
               Esqueci minha senha
             </Link>
           </div>
 
-          <Link to="/" className="button-in">
+          <Link to="/aaa" className="button-in">
             Entrar
           </Link>
 

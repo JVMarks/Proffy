@@ -1,0 +1,99 @@
+#Accept-page-information{
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #8257E5;
+}
+
+#Accept-page-information .backgound{
+  width: 70vw;
+  height: 78.2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/images/success-background.svg");
+} 
+
+.discription{
+  padding-left: 30rem;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.discription img{
+  height: 15rem;
+  margin-bottom: 20px;
+  padding-left: 2.3rem;
+}
+
+.discription strong{
+  width: 47vw;
+  font-weight: 800;
+  color: #FFFFFF;
+  padding-right: 28rem;
+  font-size: 4.4rem;
+  text-align: center;
+  line-height: 4.6rem;
+  margin-bottom: 20px;
+}
+
+.discription p{
+  width: 40rem;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  color: #D4C2FF;
+  margin-bottom: 30px;
+  padding-right: 20rem;
+}
+
+#Accept-page-information .button-Accept{
+width: 20rem;
+height: 5rem;
+border-radius: 10px;
+background: #04D361;
+text-align: center;
+align-items: center;
+justify-content: center;
+padding: 10px;
+cursor: pointer;
+}
+
+#Accept-page-information .button-Accept a{
+text-decoration: none;
+color: #FFFFFF;
+font-family: Archivo;
+font-style: normal;
+font-weight: 600;
+font-size: 1.5rem;
+line-height: 1.5rem;
+text-align: center;
+cursor: pointer;
+}
+
+#Accept-page-information .button-Accept:hover{
+  background: var(--color-secundary-dark);
+}
+
+@media(min-width: 700px){
+  .discription img{
+    height: 15rem;
+    margin-bottom: 20px;
+    padding-left: 13rem;
+  }
+  
+  .discription p{
+    padding-left: 2rem;
+    padding-right: 0rem;
+  }
+  
+  #Accept-page-information .button-Accept{
+    width: 43rem;
+  }
+}

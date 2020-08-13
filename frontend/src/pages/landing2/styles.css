@@ -103,38 +103,48 @@ article .Loginform {
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
-  
+  cursor: pointer;
   color: #9C98A6;
+}
+
+.Loginform .CheckboxInput label:hover {
+  color: #8e81ac;
+}
+
+.Loginform .CheckboxInput .checkboxText input {
+ padding-left: 0.5rem; 
+ 
 }
 
 .Loginform .CheckboxInput .esqueci {
   display: flex;
   justify-content: center;
   align-items: center; 
-  padding-left: 5vw;
+  padding-left: 6.5vw;
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-
   text-align: right;
-  
   color: #9C98A6;
   text-decoration: none;
+  transition: background-color 0.2s;
+  cursor: pointer;
 }
 
+.Loginform .CheckboxInput .esqueci:hover {
+  color: #8e81ac;
+}
 
  .Loginform .button-in {
   width: 37rem;
   height: 8.4rem;
   border-radius: 0.8rem;
   font: 700 2.0rem Archivo;
-  
   display: flex;
   align-items: center;
   justify-content: center;
-
   text-decoration: none;
   color: var(--color-button-text);
   background: var(--color-secundary);
@@ -159,20 +169,16 @@ article .Loginform {
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
-  
   color: #6A6180;
+  cursor: default;
 }
 
 .Loginform .footer-link{
- 
-  
   font-family: Poppins;
   font-style: normal;
   font-weight: 800;
   font-size: 1.4rem;
   line-height: 26px;
-
-  
   color: #6A6180;
 }
 
@@ -183,4 +189,5 @@ font-weight: normal;
 font-size: 12px;
 line-height: 20px;
 color: #9C98A6;
+cursor: default;
 }

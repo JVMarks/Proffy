@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { Link } from 'react-router-dom';
 
 import logoimg from '../../assets/images/logo.svg';
@@ -7,11 +6,11 @@ import backgroundImg from '../../assets/images/success-background.svg';
 import backIcon from '../../assets/images/icons/back.svg';
 import './styles.css';
 
+
 function forgotAccont() {
 
   return (
     <div id="page-forgotAccont">
-
       <header className="page-header2">
         <div className="top-bar-container2">
           <Link to="/">
@@ -21,9 +20,7 @@ function forgotAccont() {
       </header>
 
       <article>
-
-
-        <form action="" className="registrationForm">
+        <form className="registrationForm">
           <legend>Eita, esqueceu sua senha?</legend>
           <span>Não esquenta, vamos dar um geito nisso.</span>
           <input
@@ -33,7 +30,7 @@ function forgotAccont() {
             placeholder="E-mail"
             className="Input"
           />
-          <Link to="/" className="button-in">
+          <Link to="/fortgot" className="button-in" type="submit">
             Entrar
         </Link>
         </form>
@@ -48,7 +45,6 @@ function forgotAccont() {
           </div>
         </div>
       </div>
-
     </div>
   )
 }

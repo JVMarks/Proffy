@@ -7,10 +7,15 @@ import Landing2 from './pages/landing2';
 import registration from './pages/registration';
 import forgotAccontt from './pages/forgotAccont';
 
+import Acconted from './pages/accepted';
+import fortgotemail from './pages/ForgotedEmail';
 
 function Routes() {
   return (
     <BrowserRouter>
+
+      <Route path="/Accept" component={Acconted} />
+      <Route path="/fortgot" component={fortgotemail} />
       <Route path="/" exact component={Landing2} />
       <Route path="/registration" component={registration} />
       <Route path="/forgotaccont" component={forgotAccontt} />
