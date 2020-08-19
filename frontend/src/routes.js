@@ -13,13 +13,17 @@ import fortgotemail from './pages/ForgotedEmail';
 function Routes() {
   return (
     <BrowserRouter>
-
+      
       <Route path="/Accept" component={Acconted} />
       <Route path="/fortgot" component={fortgotemail} />
-      <Route path="/" exact component={Landing2} />
+
+
       <Route path="/registration" component={registration} />
       <Route path="/forgotaccont" component={forgotAccontt} />
+
+      <Route path="/" exact component={Landing2} />
       <Route path="/aaa" exact component={Landing} />
+
       <Route path="/study" component={TeacherList} />
       <Route path="/give-classes" component={TeacherForm} />
     </BrowserRouter>
