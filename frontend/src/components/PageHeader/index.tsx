@@ -15,7 +15,7 @@ const PageHeader: React.FC<PegeHeaderProps> = (props) => {
   return (
     <header className="page-header">
       <div className="top-bar-container">
-        <Link to="/">
+        <Link to="/Home">
           <img src={backIcon} alt="Voltar" />
         </Link>
         <img src={logoImg} alt="Proffy" />

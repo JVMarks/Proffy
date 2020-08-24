@@ -17,3 +17,4 @@ module.exports = {
 //como criar tabelas com o knex
 //1° criar tabela dentro das migrations
 //2° yarn knex:migrate
+//yarn knex:migrate:rollback

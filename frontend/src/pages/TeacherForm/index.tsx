@@ -60,7 +60,7 @@ function TeacherForm() {
    }).then(() => {
      alert('Cadastro realizado com sucesso!')
      
-     history.push('/');
+     history.push('/Home');
     }).catch(() => {
      alert('Erro no cadastro!');
    })

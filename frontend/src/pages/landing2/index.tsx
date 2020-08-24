@@ -55,7 +55,7 @@ function landing2() {
             </Link>
           </div>
 
-          <Link to="/aaa" className="button-in">
+          <Link to="/Home" className="button-in">
             Entrar
           </Link>
 
