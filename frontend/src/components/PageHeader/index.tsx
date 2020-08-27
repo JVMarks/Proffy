@@ -8,6 +8,7 @@ import './styles.css';
 
 interface PegeHeaderProps {
   title: string;
+  information: String;
   description?: string;
 }
 
@@ -18,6 +19,7 @@ const PageHeader: React.FC<PegeHeaderProps> = (props) => {
         <Link to="/Home">
           <img src={backIcon} alt="Voltar" />
         </Link>
+        <p>{props.information}</p>
         <img src={logoImg} alt="Proffy" />
       </div>
 

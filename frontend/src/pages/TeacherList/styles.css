@@ -65,6 +65,22 @@
     margin: 0 auto; 
   }
 
+  #page-teacher-list main #noOne{
+    width: 30rem;
+    display: block;  
+    margin-top: 9rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    
+    color: #9C98A6;
+    font-style: normal;
+    font-weight: normal;
+    font: 400 1.6rem Poppins;
+  }
+
   .teacher-item header,
   .teacher-item footer {
     padding: 3.2rem;
