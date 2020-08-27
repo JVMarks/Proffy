@@ -1,4 +1,4 @@
-#page-landing {
+#page-landing2 {
   width: 100vw;
   height: 100vh;
 
@@ -7,136 +7,187 @@
   align-items: center;
 
   color: var(--color-text-in-primary);
+}
+
+.background-page{
+  width: 140vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: var(--color-primary);
 }
 
-.logo-container img {
+.background-page .background_img{
+position: absolute;
+width: 45vw;
+height: 50vh;
+
+transform: rotate(90deg);
+} 
+
+.background-page .logo-container2 img {
   height: 10rem;
 }
 
-.hero-image {
-  width: 100%; 
-}
-
-.logo-container {
-  text-align: center;
+.logo-container2 {
+  text-align: left;
   margin-bottom: 3.2rem;
 }
 
-.logo-container h2 {
+.logo-container2 h2 {
   font-weight: 500;
   font-size: 2.4rem;
   line-height: 4.6rem;
-  margin-top: 0.8rem;
+  width: 25vw;
 }
 
-.buttons-container {
+#page-landing2 article {
+  width: 100vw;
+  height: 100vh;
+
   display: flex;
   justify-content: center;
-  margin: 3.2rem 0;
+  align-items: center;
 }
 
-.buttons-container a {
-  width: 30rem;
-  height: 10.4rem;
+article .Loginform {
+  display: block;
+  justify-content: center;
+  align-items: center; 
+  padding-left: 10vw;
+
+  width: 100%;
+  max-width: 74rem;
+  border-radius: 0.8rem;
+  margin: -3.2rem auto 3.2rem;
+  padding-top: 6.4rem;
+  overflow: hidden;
+
+}
+
+.Loginform legend {
+  margin-bottom: 20px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 36px;
+
+  color: #32264D;
+}
+
+.Loginform .Input {
+  width: 37rem;
+  height: 8.4rem;
+  margin: 2px;
+  padding: 10px;
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  box-sizing: border-box;
+  border-radius: 8px 8px 8px 8px;
+  margin-bottom: 5px;
+}
+
+.Loginform .CheckboxInput {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+ 
+}
+
+ .Loginform .checkboxText {
+  margin: 5px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  cursor: pointer;
+  color: #9C98A6;
+}
+
+.Loginform .CheckboxInput label:hover {
+  color: #8e81ac;
+}
+
+.Loginform .CheckboxInput .checkboxText input {
+ padding-left: 0.5rem; 
+ 
+}
+
+.Loginform .CheckboxInput .esqueci {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  padding-left: 6.5vw;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+  color: #9C98A6;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.Loginform .CheckboxInput .esqueci:hover {
+  color: #8e81ac;
+}
+
+ .Loginform .button-in {
+  width: 37rem;
+  height: 8.4rem;
   border-radius: 0.8rem;
   font: 700 2.0rem Archivo;
-  
   display: flex;
   align-items: center;
   justify-content: center;
-
   text-decoration: none;
   color: var(--color-button-text);
-
+  background: var(--color-secundary);
   transition: background-color 0.2s;
 }
 
-.buttons-container a:first-child {
-  margin-right: 1.6rem;
-}
-
-.buttons-container a img {
-  width: 4rem;
-}
-
-.buttons-container a.study {
-  background: var(--color-primary-dark);
-}
-
-.buttons-container a.give-classes {
-  background: var(--color-secundary);
-}
-
-.buttons-container a.study:hover {
-  background: var(--color-text-in-primary);
-}
-
-.buttons-container a.give-classes:hover {
+.Loginform  a.button-in:hover {
   background: var(--color-secundary-dark);
 }
 
-.buttons-container a img{
-  margin-right: 2.4rem;
-}
-
-.total-connections {
-  font-size: 1.4rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.total-connections img{
-  margin-left: 0.8rem;
-}
-
-@media (min-width: 1100px){
- #page-landing-content {
-  max-width: 1100px;
-
+.Loginform footer {
+  padding-top: 10vh;
+  width: 100%;
   display: grid;
-  grid-template-rows: 350px 1fr ;
-  grid-template-columns: 2fr 1fr 1fr;
-  grid-template-areas: 
-  "logo hero hero"
-  "buttons buttons total"
-  ;
- }
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.6rem;
+}
 
- .logo-container{
-   grid-area: logo;
-   align-self: center;
-   text-align: left;
-   margin: 0;
- }
+.Loginform p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #6A6180;
+  cursor: default;
+}
 
- .logo-container h2{
-   text-align: initial;
-   font-size: 3.6rem;
- }
+.Loginform .footer-link{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.4rem;
+  line-height: 26px;
+  color: #6A6180;
+}
 
- .logo-container img {
-   height: 100%;
- }
-
- .hero-image{
-   grid-area: hero;
-   justify-self: end;
- }
-
- .buttons-container{
-   grid-area: buttons;
-   justify-content: flex-start;
- }
-
- .buttons-container a {
-   font-size: 2.4rem;
- }
-
- .total-connections{
-   grid-area: total;
-   justify-self: end;
- }
+.Loginform span {
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 20px;
+color: #9C98A6;
+cursor: default;
 }

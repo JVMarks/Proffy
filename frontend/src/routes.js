@@ -1,14 +1,16 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Landing from './pages/Landing';
+
+import landing from './pages/Landing';
+import Acconted from './pages/accepted';
+import forgotAccontt from './pages/forgotAccont';
+import fortgotemail from './pages/ForgotedEmail';
+
+import Home from './pages/Home';
 import TeacherList from './pages/TeacherList';
 import TeacherForm from './pages/TeacherForm';
-import Landing2 from './pages/landing2';
 import registration from './pages/registration';
-import forgotAccontt from './pages/forgotAccont';
 
-import Acconted from './pages/accepted';
-import fortgotemail from './pages/ForgotedEmail';
 
 function Routes() {
 
@@ -36,7 +38,7 @@ function Routes() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/" exact component={Landing2} />
+        <Route path="/" exact component={landing} />
         <Route path="/Accept" component={Acconted} />
         <Route path="/fortgot" component={fortgotemail} />
 
@@ -44,7 +46,7 @@ function Routes() {
         <Route path="/registration" component={registration} />
         <Route path="/forgotaccont" component={forgotAccontt} />
 
-        <Route path="/Home" exact component={Landing} />
+        <Route path="/Home" exact component={Home} />
 
         <Route path="/study" component={TeacherList} />
         <Route path="/give-classes" component={TeacherForm} />

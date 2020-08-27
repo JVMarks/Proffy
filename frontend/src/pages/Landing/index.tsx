@@ -1,58 +1,74 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 import logoimg from '../../assets/images/logo.svg';
-import landingImg from '../../assets/images/landing.svg';
-import studyIcon from '../../assets/images/icons/study.svg';
-import giveGlassesIcon from '../../assets/images/icons/give-classes.svg';
+import backgroundImg from '../../assets/images/success-background.svg';
 import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg';
 
-import api from '../../server/api';
 import './styles.css';
 
-function Landing() {
-    const [totalConnections, setTotalConnections] = useState(0);
-
-    useEffect(() => {
-      api.get('connections').then(response =>{
-       const { total } = response.data;
-
-       setTotalConnections(total);
-      })
-    }, []);
-    
+function landing() {
   return (
-    <div id="page-landing">
-      <div id="page-landing-content" className="container">
-        <div className="logo-container">
-          <img src={logoimg} alt="Proffy" />
-          <h2>Sua plataforma de estudos online.</h2>
+
+    <div id="page-landing2">
+      <div className="background-page">
+        <img src={backgroundImg} alt="blckground" className="background_img" />
+        <div id="page-landing-content2" className="container2">
+          <div className="logo-container2">
+            <img src={logoimg} alt="Proffy" />
+            <h2>Sua plataforma de estudos online.</h2>
+          </div>
         </div>
-
-        <img
-          src={landingImg}
-          alt="Plataforma de estudo"
-          className="hero-image"
-        />
-
-        <div className="buttons-container">
-          <Link to="/study" className="study">
-            <img src={studyIcon} alt="Estudar" />
-           Estadar
-          </Link>
-
-          <Link to="/give-classes" className="give-classes">
-            <img src={giveGlassesIcon} alt="Dar Aulas" />
-           Dar Aulas
-          </Link>
-        </div>
-
-        <span className="total-connections">
-          Total de {totalConnections} conexões já realizadas <img src={purpleHeartIcon} alt="Coração roxo" />
-        </span>
       </div>
+
+      <article>
+        <form action="" className="Loginform">
+
+          <legend>Fazer login</legend>
+          <input
+            type="text"
+            id="e-mail"
+            name="e-mail"
+            placeholder="E-mail"
+            className="Input"
+          />
+          <input
+            type="password"
+            id="pwd"
+            name="pwd"
+            placeholder="Senha"
+            className="Input"
+          />
+          <div className="CheckboxInput">
+
+            <label className="checkboxText">
+              <input
+                id="checkbox"
+                name="checkbox"
+                type="checkbox"
+              />
+              <span className="checkmark"></span>
+              Lembrar-me</label>
+
+            <Link to="/forgotaccont" className="esqueci">
+              Esqueci minha senha
+            </Link>
+          </div>
+
+          <Link to="/Home" className="button-in">
+            Entrar
+          </Link>
+
+          <footer>
+            <p>Não tem conta?</p>
+            <span>É de graça <img src={purpleHeartIcon} alt="Coração roxo" /></span>
+            <Link to="/registration" className="footer-link">Cadastre-se</Link>
+          </footer>
+        </form>
+      </article>
+
     </div>
   )
 }
 
-export default Landing;
+export default landing;

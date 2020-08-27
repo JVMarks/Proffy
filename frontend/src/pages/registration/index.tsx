@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 import logoimg from '../../assets/images/logo.svg';
-import backgroundImg from '../../assets/images/success-background.svg';
 import backIcon from '../../assets/images/icons/back.svg';
+import backgroundImg from '../../assets/images/success-background.svg';
 
 import './styles.css';
 
