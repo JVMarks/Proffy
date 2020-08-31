@@ -11,16 +11,16 @@ import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg';
 import './styles.css';
 
 function Home() {
-    const [totalConnections, setTotalConnections] = useState(0);
+  const [totalConnections, setTotalConnections] = useState(0);
 
-    useEffect(() => {
-      api.get('connections').then(response =>{
-       const { total } = response.data;
+  useEffect(() => {
+    api.get('connections').then(response => {
+      const { total } = response.data;
 
-       setTotalConnections(total);
-      })
-    }, []);
-    
+      setTotalConnections(total);
+    })
+  }, []);
+
   return (
     <div id="page-landing">
       <div id="page-landing-content" className="container">

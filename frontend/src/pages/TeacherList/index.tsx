@@ -32,7 +32,7 @@ function TeacherList() {
 
   return (
     <div id="page-teacher-list" className="container">
-      <PageHeader information="Estudar" title="Estes são os proffys disponíveis.">
+      <PageHeader information="Estudar" title="Estes são os proffys disponíveis." textIcon="Nós temos mais de 100 professores">
         <form id="search-teachers" onSubmit={searchTeachers}>
 
           <Select

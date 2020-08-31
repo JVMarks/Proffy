@@ -32,7 +32,7 @@
   width: 90%;
   margin: 0 auto;
   position: relative;
-  margin: 3.2rem auto;
+  margin: 3.2rem auto; 
 }
 
 .page-header .header-content strong{
@@ -47,6 +47,21 @@
   line-height: 2.6rem;
   color: var(--color-text-in-primary);
   margin-top: 2.4rem;
+}
+
+.page-header .header-content img,span{
+  margin-top: 2.5rem;
+}
+
+.page-header .header-content img{
+ margin-right: 0.5rem;
+}
+
+.page-header .header-content span{
+  max-width: 15rem;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: var(--color-text-in-primary);
 }
 
 @media (min-width: 700px){
@@ -79,5 +94,22 @@
 
   .page-header .header-content strong {
     max-width: 350px;
+  }
+
+  .page-header .header-content img,span{
+    position: absolute;
+    margin-left: 70%;
+  }
+  
+  .page-header .header-content img{
+    padding-top: 2.5rem;
+    margin: 64%;
+  }
+  
+  .page-header .header-content span{
+    max-width: 15rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: var(--color-text-in-primary);
   }
 }

@@ -3,11 +3,13 @@ import { Link } from 'react-router-dom';
 
 import logoImg from '../../assets/images/logo.svg';
 import backIcon from '../../assets/images/icons/back.svg';
+import rocket from '../../assets/images/rocket.svg';
 
 import './styles.css';
 
 interface PegeHeaderProps {
   title: string;
+  textIcon: String;
   information: String;
   description?: string;
 }
@@ -27,6 +29,8 @@ const PageHeader: React.FC<PegeHeaderProps> = (props) => {
         <strong>{props.title}</strong>
         {props.description && <p>{props.description}</p>}
         {props.children}
+        <img src={rocket} alt="rocket" />
+        <span>{props.textIcon}</span>
       </div>
     </header>
   );
