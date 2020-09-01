@@ -129,7 +129,7 @@ article .registrationForm {
   color: #32264D;
 }
 
-.registrationForm span {
+.registrationForm h3 {
   display: block;
   justify-content: center;
   align-items: center; 

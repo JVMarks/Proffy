@@ -22,7 +22,7 @@ function registration() {
       <article>
         <form className="registrationForm" >
           <legend>Cadastro</legend>
-          <span>Preencha os dados abaixo para começar.</span>
+          <h3>Preencha os dados abaixo para começar.</h3>
           <input
             placeholder="Nome"
             id="nome"

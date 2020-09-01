@@ -118,7 +118,7 @@ article .registrationForm {
 
 }
 
-.registrationForm legend {
+article .registrationForm legend {
   display: block;
   justify-content: center;
   align-items: center; 
@@ -133,7 +133,7 @@ article .registrationForm {
   color: #32264D;
 }
 
-.registrationForm span {
+article .registrationForm h3 {
   display: block;
   justify-content: center;
   align-items: center; 

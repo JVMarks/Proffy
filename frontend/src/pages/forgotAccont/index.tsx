@@ -23,7 +23,7 @@ function forgotAccont() {
       <article>
         <form className="registrationForm">
           <legend>Eita, esqueceu sua senha?</legend>
-          <span>Não esquenta, vamos dar um geito nisso.</span>
+          <h3>Não esquenta, vamos dar um geito nisso.</h3>
           <input
             type="text"
             id="e-mail"

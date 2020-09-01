@@ -1,13 +1,40 @@
 #page-landing {
   width: 100vw;
-  height: 100vh;
-
-  display: flex;
+  height: 100vh;  
   justify-content: center;
   align-items: center;
-
   color: var(--color-text-in-primary);
   background: var(--color-primary);
+}
+
+#page-landing .container{
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.container .home-header{
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  padding: 1.6rem 0;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-header .Logout {
+ margin-left: 84%;
+}
+
+.home-header .Logout > img{
+  height: 3.6rem;
+}
+
+.home-header .Logout img:hover{
+  opacity: 0.6;
 }
 
 .logo-container img {
@@ -30,112 +57,164 @@
   margin-top: 0.8rem;
 }
 
-.buttons-container {
+#page-landing .info-container{
+  height: 40%;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  margin: 3.2rem 0;
-}
-
-.buttons-container a {
-  width: 30rem;
-  height: 10.4rem;
-  border-radius: 0.8rem;
-  font: 700 2.0rem Archivo;
-  
-  display: flex;
+  text-align: center;
   align-items: center;
   justify-content: center;
+  background: var(--color-background);
+}
 
+.info-container .buttons-container {
+  margin: 3.2rem 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-container .buttons-container a {
+  width: 30rem;
+  margin: 0.4rem 0;
+  height: 10.4rem;
+  margin-left: 2rem;
+  border-radius: 0.8rem;
+  font: 700 2.0rem Archivo;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   color: var(--color-button-text);
-
   transition: background-color 0.2s;
 }
 
-.buttons-container a:first-child {
+.info-container .buttons-container a:first-child {
   margin-right: 1.6rem;
 }
 
-.buttons-container a img {
+.info-container .buttons-container a img {
   width: 4rem;
 }
 
-.buttons-container a.study {
+.info-container .buttons-container a.study {
   background: var(--color-primary-dark);
 }
 
-.buttons-container a.give-classes {
+.info-container .buttons-container a.give-classes {
   background: var(--color-secundary);
 }
 
-.buttons-container a.study:hover {
+.info-container .buttons-container a.study:hover {
   background: var(--color-text-in-primary);
 }
 
-.buttons-container a.give-classes:hover {
+.info-container .buttons-container a.give-classes:hover {
   background: var(--color-secundary-dark);
 }
 
-.buttons-container a img{
+.info-container .buttons-container a img{
   margin-right: 2.4rem;
 }
 
-.total-connections {
-  font-size: 1.4rem;
+.info-container .total-connections {
   display: flex;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: normal;
   align-items: center;
   justify-content: center;
 }
 
-.total-connections img{
+.info-container .total-connections{
+  margin-top: 35rem;
+  position: absolute;
+}
+
+.info-container  p{
+  position: absolute;
+  margin-top: 25rem;
+
+}
+
+.info-container .total-connections img{
   margin-left: 0.8rem;
 }
 
 @media (min-width: 1100px){
- #page-landing-content {
-  max-width: 1100px;
+.home-header .Logout img{
+  position: absolute;
+  top: 0.8rem;
+  right: 16rem;
+}
 
-  display: grid;
-  grid-template-rows: 350px 1fr ;
-  grid-template-columns: 2fr 1fr 1fr;
-  grid-template-areas: 
-  "logo hero hero"
-  "buttons buttons total"
-  ;
- }
+#page-landing .container{
+height: 60%;
+}
 
- .logo-container{
-   grid-area: logo;
-   align-self: center;
-   text-align: left;
-   margin: 0;
- }
+#page-landing-content {
+  display: flex;
+}
 
- .logo-container h2{
-   text-align: initial;
-   font-size: 3.6rem;
- }
+#page-landing-content .logo-container{
+left: 0;
+right: 0;
+padding: 12rem;
+margin-left: 25%;
+}
 
- .logo-container img {
-   height: 100%;
- }
+.logo-container h2 {
+  height: 0;
+  text-align: left;
+  font-weight: 400;
+  font-size: 2.4rem;
+  margin-top: 0.8rem;
+  line-height: 4.0rem;
+}
 
- .hero-image{
-   grid-area: hero;
-   justify-self: end;
- }
+#page-landing .info-container{
+  height: 40%;
+}
 
- .buttons-container{
-   grid-area: buttons;
-   justify-content: flex-start;
- }
+.info-container .buttons-container{
+  display: flex;
+}
 
- .buttons-container a {
-   font-size: 2.4rem;
- }
+.info-container .buttons-container{
+  right: 20rem;
+  margin-top: 0;
+  position: absolute;
+}
 
- .total-connections{
-   grid-area: total;
-   justify-self: end;
- }
+.info-container p{
+  left: 10rem;
+  margin-top: 0;
+  width: 12.4vw;
+  font-size: 20px;
+  text-align: left;
+  color: #6A6180;
+  line-height: 30px;
+  font-style: normal;
+  position: absolute;
+  font-weight: normal;
+  font-family: Poppins;
+}
+
+.info-container .total-connections{
+  right: 57%;
+  float: left;
+  width: 15vw;
+  margin-top: 0;
+  display: flex;
+  font-size: 1.4rem;
+  text-align: right;
+  position: absolute; 
+  margin-bottom: 2rem;
+  justify-items: right;
+}
+
+.info-container .total-connections img{
+  margin-top: 2.2rem;
+}
 }

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import api from '../../server/api';
 
 import logoimg from '../../assets/images/logo.svg';
+import logoutIcon from '../../assets/images/off.svg';
 import landingImg from '../../assets/images/landing.svg';
 import studyIcon from '../../assets/images/icons/study.svg';
 import giveGlassesIcon from '../../assets/images/icons/give-classes.svg';
@@ -24,6 +25,13 @@ function Home() {
   return (
     <div id="page-landing">
       <div id="page-landing-content" className="container">
+
+        <header className="home-header">
+          <Link to="/" className="Logout">
+            <img src={logoutIcon} alt="Logout" />
+          </Link>
+        </header>
+
         <div className="logo-container">
           <img src={logoimg} alt="Proffy" />
           <h2>Sua plataforma de estudos online.</h2>
@@ -34,11 +42,17 @@ function Home() {
           alt="Plataforma de estudo"
           className="hero-image"
         />
+      </div>
 
+      <div className="info-container">
+          <p>Seja bem-vindo. <strong>O que deseja fazer?</strong></p>
+          <h6 className="total-connections">
+            Total de {totalConnections} conexões já realizadas <img src={purpleHeartIcon} alt="Coração roxo" />
+          </h6>
         <div className="buttons-container">
           <Link to="/study" className="study">
             <img src={studyIcon} alt="Estudar" />
-           Estadar
+           Estudar
           </Link>
 
           <Link to="/give-classes" className="give-classes">
@@ -46,10 +60,6 @@ function Home() {
            Dar Aulas
           </Link>
         </div>
-
-        <span className="total-connections">
-          Total de {totalConnections} conexões já realizadas <img src={purpleHeartIcon} alt="Coração roxo" />
-        </span>
       </div>
     </div>
   )

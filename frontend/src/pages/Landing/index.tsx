@@ -61,7 +61,7 @@ function landing() {
 
           <footer>
             <p>Não tem conta?</p>
-            <span>É de graça <img src={purpleHeartIcon} alt="Coração roxo" /></span>
+            <h4>É de graça <img src={purpleHeartIcon} alt="Coração roxo" /></h4>
             <Link to="/registration" className="footer-link">Cadastre-se</Link>
           </footer>
         </form>
